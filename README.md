@@ -1,2 +1,2 @@
 # FYJ.Winform
-winform界面库
+12年开发的Winform界面，参照了QQ部分,有好几年没开发了,因为后面用了WPF发现简单很多。比如winform实现局部半透明是非常难的，WPF就简单许多，还有Winform各种GDI重绘。不过新时代，也可以用HTML5来做桌面应用的界面了，当时开发这个winform库真的花了很多很多时间和精力。 
