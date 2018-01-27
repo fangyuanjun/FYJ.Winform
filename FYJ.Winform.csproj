@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6DC9CE13-667B-408E-AF7C-A0D934883319}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FYJ.Winform</RootNamespace>
+    <AssemblyName>FYJ.Winform</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>appSign.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\BackGroundPanelTrend.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\BaseButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CommonTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CommonTextBox.Designer.cs">
+      <DependentUpon>CommonTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LogList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LogList.designer.cs">
+      <DependentUpon>LogList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\ITaskbarList4.cs" />
+    <Compile Include="Controls\ProgressBarEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Util\TaskbarManager.cs" />
+    <Compile Include="Controls\TextBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TextBoxEx.designer.cs">
+      <DependentUpon>TextBoxEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ColorSkin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ColorSkin.Designer.cs">
+      <DependentUpon>ColorSkin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CommonButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ContextMenuStripEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ImageButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\PicSkin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PicSkin.Designer.cs">
+      <DependentUpon>PicSkin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PictureBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\PictureBoxWithBorder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SkinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\SkinForm.Designer.cs">
+      <DependentUpon>SkinForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SkinImageButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TabControlEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ToolStripProfessionalRendererEx.cs" />
+    <Compile Include="Forms\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BrowserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BrowserForm.Designer.cs">
+      <DependentUpon>BrowserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChildForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChildForm.Designer.cs">
+      <DependentUpon>ChildForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MessageBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MessageBoxForm.Designer.cs">
+      <DependentUpon>MessageBoxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NotifyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScrollForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Test\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrackBarEx\ControlPaintEx.cs" />
+    <Compile Include="TrackBarEx\ControlState.cs" />
+    <Compile Include="TrackBarEx\GraphicsPathHelper.cs" />
+    <Compile Include="TrackBarEx\ImageDc.cs" />
+    <Compile Include="TrackBarEx\InterpolationModeGraphics.cs" />
+    <Compile Include="TrackBarEx\PaintThumbEventArgs.cs" />
+    <Compile Include="TrackBarEx\PaintTickEventArgs.cs" />
+    <Compile Include="TrackBarEx\RegionHelper.cs" />
+    <Compile Include="TrackBarEx\RenderHelper.cs" />
+    <Compile Include="TrackBarEx\RoundStyle.cs" />
+    <Compile Include="TrackBarEx\SmoothingModeGraphics.cs" />
+    <Compile Include="TrackBarEx\TextRenderingHintGraphics.cs" />
+    <Compile Include="TrackBarEx\ThumbArrowDirection.cs" />
+    <Compile Include="TrackBarEx\TrackBarColorTable.cs" />
+    <Compile Include="TrackBarEx\TrackBarEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TrackBarEx\Win32\ClassName.cs" />
+    <Compile Include="TrackBarEx\Win32\Const\AC.cs" />
+    <Compile Include="TrackBarEx\Win32\Const\CDDS.cs" />
+    <Compile Include="TrackBarEx\Win32\Const\CDRF.cs" />
+    <Compile Include="TrackBarEx\Win32\Const\GWL.cs" />
+    <Compile Include="TrackBarEx\Win32\Const\HWND.cs" />
+    <Compile Include="TrackBarEx\Win32\Const\ICC.cs" />
+    <Compile Include="TrackBarEx\Win32\Const\LPSTR.cs" />
+    <Compile Include="TrackBarEx\Win32\Const\NM.cs" />
+    <Compile Include="TrackBarEx\Win32\Const\SWP.cs" />
+    <Compile Include="TrackBarEx\Win32\Const\TBM.cs" />
+    <Compile Include="TrackBarEx\Win32\Const\TTDT.cs" />
+    <Compile Include="TrackBarEx\Win32\Const\TTF.cs" />
+    <Compile Include="TrackBarEx\Win32\Const\TTI.cs" />
+    <Compile Include="TrackBarEx\Win32\Const\TTM.cs" />
+    <Compile Include="TrackBarEx\Win32\Const\TTN.cs" />
+    <Compile Include="TrackBarEx\Win32\Const\TTS.cs" />
+    <Compile Include="TrackBarEx\Win32\Const\VK.cs" />
+    <Compile Include="TrackBarEx\Win32\Const\WM.cs" />
+    <Compile Include="TrackBarEx\Win32\Const\WS.cs" />
+    <Compile Include="TrackBarEx\Win32\Const\WS_EX.cs" />
+    <Compile Include="TrackBarEx\Win32\Enum\TRACKMOUSEEVENT_FLAGS.cs" />
+    <Compile Include="TrackBarEx\Win32\Helper.cs" />
+    <Compile Include="TrackBarEx\Win32\NativeMethods.cs" />
+    <Compile Include="TrackBarEx\Win32\Result.cs" />
+    <Compile Include="TrackBarEx\Win32\Struct\BLENDFUNCTION.cs" />
+    <Compile Include="TrackBarEx\Win32\Struct\INITCOMMONCONTROLSEX.cs" />
+    <Compile Include="TrackBarEx\Win32\Struct\NMCUSTOMDRAW.cs" />
+    <Compile Include="TrackBarEx\Win32\Struct\NMHDR.cs" />
+    <Compile Include="TrackBarEx\Win32\Struct\NMTTCUSTOMDRAW.cs" />
+    <Compile Include="TrackBarEx\Win32\Struct\NMTTDISPINFO.cs" />
+    <Compile Include="TrackBarEx\Win32\Struct\PAINTSTRUCT.cs" />
+    <Compile Include="TrackBarEx\Win32\Struct\POINT.cs" />
+    <Compile Include="TrackBarEx\Win32\Struct\RECT.cs" />
+    <Compile Include="TrackBarEx\Win32\Struct\TOOLINFO.cs" />
+    <Compile Include="TrackBarEx\Win32\Struct\TRACKMOUSEEVENT.cs" />
+    <Compile Include="TrackBarEx\Win32\Struct\TT_HITTESTINFO.cs" />
+    <Compile Include="Util\BitmapHelper.cs" />
+    <Compile Include="Util\ColorConverter.cs" />
+    <Compile Include="Util\Common.cs" />
+    <Compile Include="Util\HSBColor.cs" />
+    <Compile Include="Util\HSLColor.cs" />
+    <Compile Include="Util\HueModifier.cs" />
+    <Compile Include="Util\MyFormTemp.cs" />
+    <Compile Include="Util\SkinUtil.cs" />
+    <Compile Include="Util\StrongNameCodeAccessPermission.cs" />
+    <Compile Include="Util\TaskMenu.cs" />
+    <Compile Include="Util\Win32.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\BaseButton.resx">
+      <DependentUpon>BaseButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ColorSkin.resx">
+      <DependentUpon>ColorSkin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LogList.resx">
+      <DependentUpon>LogList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PicSkin.resx">
+      <DependentUpon>PicSkin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SkinForm.resx">
+      <DependentUpon>SkinForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SkinImageButton.resx">
+      <DependentUpon>SkinImageButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BrowserForm.resx">
+      <DependentUpon>BrowserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChildForm.resx">
+      <DependentUpon>ChildForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MessageBoxForm.resx">
+      <DependentUpon>MessageBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="appSign.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\btn_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_focus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sysmessagebox_errorFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sysmessagebox_inforFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sysmessagebox_questionFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sysmessagebox_warningFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_skin_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_skin_highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_skin_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_menu_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右下角_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mainform_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\透明度.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TbAdjustColorNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TbAdjustColorPushed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TbShadingNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TbShadingPushed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xiaoyuanquan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shading_highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x_enter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainBkg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base_form_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_close_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_close_highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_close_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_max_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_max_highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_max_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_mini_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_mini_highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_mini_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_restore_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_restore_highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_restore_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_menu_down.png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_menu_highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_menu_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main_form_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frameBorderEffect_normalDraw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keyboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frameBorderEffect_mouseDownDraw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Padding4Hot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Padding4Normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Padding4Press.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Padding4Select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allbtn_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allbtn_highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\message.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\netsetting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TabIcons.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
